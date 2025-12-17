@@ -27,7 +27,6 @@ const fadeUp = {
   visible: { opacity: 1, y: 0 },
 };
 
-
 const About = () => {
   return (
     <section
@@ -83,24 +82,25 @@ const About = () => {
           variants={container}
           className="mt-16 flex flex-wrap justify-center gap-10 md:gap-14"
         >
-          {techStack.map((tech, index) => (
+          {techStack.map((tech) => (
             <motion.div
-  key={tech.name}
-  variants={fadeUp}
-  whileHover={{ scale: 1.12 }}
-  animate={{ y: [0, -4, 0] }}
-  transition={{
-    duration: 2.4,
-    repeat: Infinity,
-    ease: "easeInOut",
-  }}
-  className="relative group cursor-pointer"
->
-
+              key={tech.name}
+              variants={fadeUp}
+              whileHover={{ scale: 1.12 }}
+              animate={{ y: [0, -4, 0] }}
+              transition={{
+                duration: 2.4,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+              className="relative group cursor-pointer"
+            >
               <img
                 src={tech.src}
                 alt={tech.name}
-                className="h-10 w-auto drop-shadow-[0_0_0_rgba(255,255,255,0)] group-hover:drop-shadow-[0_0_14px_rgba(255,255,255,0.7)] transition-all duration-300"
+                className="h-10 w-auto drop-shadow-[0_0_0_rgba(255,255,255,0)] 
+                group-hover:drop-shadow-[0_0_14px_rgba(255,255,255,0.7)] 
+                transition-all duration-300"
               />
 
               {/* Tooltip */}
