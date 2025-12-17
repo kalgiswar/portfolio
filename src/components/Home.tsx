@@ -44,9 +44,9 @@ const Home = () => {
         transition={{ duration: 0.45 }}
         className="text-4xl md:text-5xl font-bold text-center max-w-4xl"
       >
-        Hi, I&apos;m a{" "}
-        <span className="text-red-500">Frontend</span> developer creating modern
-        web apps.
+        Hi, I&apos;m an{" "}
+        <span className="text-red-500">AI & ML student</span>building intelligent backend-driven applications.
+
       </motion.h1>
 
       <motion.p
@@ -55,9 +55,9 @@ const Home = () => {
         transition={{ duration: 0.45, delay: 0.1 }}
         className="text-lg md:text-xl text-gray-300 text-center max-w-3xl"
       >
-        A frontend developer passionate about building modern web applications
-        using Next.js, React, and Tailwind CSS — focused on clean UI and smooth
-        user experience.
+        Passionate about Machine Learning, data-driven systems, and backend development 
+with Python — complemented by modern web technologies.
+
       </motion.p>
 
       {/* ACTION BUTTONS */}
