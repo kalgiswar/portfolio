@@ -71,7 +71,9 @@ const Header = () => {
               {menus.map((menu, index) => (
                 <button
                   key={menu}
-                  ref={(el) => (itemRefs.current[index] = el)}
+                  ref={(el) => {
+                    itemRefs.current[index] = el;
+                  }}
                   onClick={() => scrollToSection(menu, index)}
                   className="relative z-10 px-4 text-sm font-semibold uppercase text-white"
                 >
