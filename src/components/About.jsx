@@ -85,18 +85,18 @@ const About = () => {
         >
           {techStack.map((tech, index) => (
             <motion.div
-              key={tech.name}
-              variants={fadeUp}
-              transition={{ duration: 0.5 }}
-              whileHover={{ scale: 1.12 }}
-            animate={{ y: [0, -4, 0] }}
-            transition={{
-              duration: 2.4,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-              className="relative group cursor-pointer"
-            >
+  key={tech.name}
+  variants={fadeUp}
+  whileHover={{ scale: 1.12 }}
+  animate={{ y: [0, -4, 0] }}
+  transition={{
+    duration: 2.4,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+  className="relative group cursor-pointer"
+>
+
               <img
                 src={tech.src}
                 alt={tech.name}
